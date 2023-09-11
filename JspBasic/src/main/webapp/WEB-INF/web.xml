@@ -9,4 +9,29 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <!-- 주석은 html과 동일 -->
+  <!--
+   # XML이란 (eXtensible Markup Language: 확장 가능한 마크업 언어)
+   -데이터를 전달하기 위한 수단으로 사용하는 문서 
+   - 서로 다른 언어를 사용하는 프로그램들 간의 데이터를 표현하기 위한 기준으로 사용.
+   	(우리는 자바를 사용하고 있잖아, 자바의 String은 파이썬의 String과 다르거든... 이거 어캐 보낼래..?)
+   	(그래서 이 값을 마크업언어로 표현해서
+   	(웹의 전반적인 속성을 전달하기 위해 표현하는 속성? 언어에 구애받지 않고 데이터를 전달하고 전달받기위해 사용했던 방식.)
+   	(요즘은 서로다른 데이터형을 보내기 위한 방식으로 json 으로 많이 표현. 자바랑 자바스크립트는 일단 말이 안통하거든? 문법이 다랄서, 데이터타입도 다르고. 자바라는 백엔드언어에서 만든 데이터를 바로 던질수 없고, 데이터를 전달할 수 있는 표준.으로 json을 사용.)
+  -->
+  
+  <!-- 지금부터 서블릿에 대해 명세하겠다는 뜻 -->
+  <servlet>
+  	<servlet-name>basic</servlet-name> <!-- 음... 서블릿의 이름은 basic이라고 할거구용 -->
+  	<servlet-class>com.jsp.servlet.ServletBasic</servlet-class> <!-- 위치는 여기야! 이파일이고! 그럼 이걸 보고 톰캣이 알아서 명세한다고 함-->
+  </servlet>
+  
+  <!-- /basic 이란 요청이 들어오면 basic이라는 서블릿을 연결해줘! -->
+  <servlet-mapping>
+  	<servlet-name>basic</servlet-name>
+  	<url-pattern>/basic</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
