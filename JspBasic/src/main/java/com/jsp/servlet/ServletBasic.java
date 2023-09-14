@@ -20,6 +20,7 @@ public class ServletBasic extends HttpServlet {
 	//# 서블릿 클래스를 만드는 방법
 	//1. HttpServlet 클래스를 상속 (extends HttpServlet, import javax.servlet.http.HttpServlet;)
 	//	-> 스프링이 없을 때 사용하던 방법
+	
 	//2. 생성자를 선언 (선택) (필요없다면 안뽑아도 무방)
 	public ServletBasic() {
 		
